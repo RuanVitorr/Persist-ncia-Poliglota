@@ -1,0 +1,16 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# SQLite (assíncrono via SQLAlchemy 2.0)
+SQLAlchemy==2.0.34
+aiosqlite==0.20.0
+
+# MongoDB (PyMongo)
+pymongo==4.8.0
+
+# Pydantic (modelagem/validação)
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# Geoprocessamento
+geopy==2.4.1
