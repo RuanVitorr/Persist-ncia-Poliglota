@@ -91,12 +91,23 @@ with tab_list:
                             "nota_media": float(nota_e) if nota_e is not None else None
                         }
                         r = requests.put(f"{API}/restaurantes/{int(rid)}", json=payload)
-                        st.success("Atualizado!") if r.ok else st.error(r.text)
+                        if r.ok:
+                            st.success("Restaurante ATUALIZADO!")
+                        else:
+                            try:
+                                err = r.json()
+                                st.error(err.get("detail", str(err)))
+                            except Exception:
+                                st.error(r.text)
 
                 st.divider()
                 if st.button("Remover"):
                     r = requests.delete(f"{API}/restaurantes/{int(rid)}")
-                    st.success("Removido!") if r.status_code in (200, 204) else st.error("Erro ao remover.")
+                    if r.status_code in (200, 204):
+                        st.success("Restaurante REMOVIDO!")
+                    else:
+                        st.error(f"NAO FOI POSSIVEL REMOVER: {r.status_code}")
+                        st.error(r.text)
         else:
             st.info("Nenhum restaurante cadastrado ainda.")
     else:
