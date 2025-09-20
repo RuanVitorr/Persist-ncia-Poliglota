@@ -1,0 +1,22 @@
+# Interface
+streamlit==1.27.0
+pandas==2.0.3
+folium==0.16.0
+
+# Backend FastAPI
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# SQLite assíncrono via SQLAlchemy 2.0
+SQLAlchemy==2.0.34
+aiosqlite==0.20.0
+
+# MongoDB
+pymongo==4.8.0
+
+# Modelagem/validação
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# Geoprocessamento
+geopy==2.4.1
