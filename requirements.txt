@@ -1,3 +1,4 @@
+#BACK-END Dependencies
 fastapi==0.115.0
 uvicorn[standard]==0.30.6
 
@@ -11,6 +12,12 @@ pymongo==4.8.0
 # Pydantic (modelagem/validação)
 pydantic==2.9.2
 pydantic-settings==2.5.2
+python-dotenv==1.0.1 
 
 # Geoprocessamento
 geopy==2.4.1
+
+# Front-END Dependencies
+streamlit==1.39.0
+requests==2.32.3
+pandas==2.2.2
