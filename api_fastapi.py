@@ -57,7 +57,7 @@ def _startup():
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "fase": 1, "entidade": "restaurantes"}
+    return {"status": "ok"}
 
 @app.post("/restaurantes", response_model=Restaurante, status_code=201)
 def criar_restaurante(payload: RestauranteCreate):

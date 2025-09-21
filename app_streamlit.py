@@ -69,7 +69,15 @@ with tab_list:
 
                 if st.button("Carregar por ID"):
                     r = requests.get(f"{API}/restaurantes/{int(rid)}")
-                    st.success(r.json()) if r.ok else st.error("Não encontrado.")
+                    if r.ok:
+                        st.success("Sucesso!")
+                        try:
+                            st.json(r.json())         # exibe o conteúdo de forma segura
+                        except Exception:
+                            st.text(r.text)
+                        else:
+                            st.error("Não encontrado.")
+                            st.text(r.text)
 
                 st.divider()
                 st.markdown("**Editar**")
