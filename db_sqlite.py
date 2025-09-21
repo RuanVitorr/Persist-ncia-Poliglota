@@ -1,4 +1,4 @@
-# FASE 1 — SQLite simples para RESTAURANTES
+
 import sqlite3, os
 from typing import List, Dict, Any, Optional
 
