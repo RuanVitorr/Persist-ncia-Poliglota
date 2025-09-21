@@ -3,7 +3,7 @@ import os, requests, pandas as pd, streamlit as st
 API = os.getenv("API_URL", "http://127.0.0.1:8010")
 
 st.set_page_config(page_title="Restaurantes — Fase 1", page_icon="🍽️", layout="wide")
-st.title("Cadastro de Restaurantes — Fase 1 (FastAPI + SQLite)")
+st.title("Cadastro de Restaurantes")
 st.caption("Obrigatórios: nome, categoria, cidade, estado, país. Extras: faixa_preco ($..$$$$) e nota_media (0–5).")
 
 try:
