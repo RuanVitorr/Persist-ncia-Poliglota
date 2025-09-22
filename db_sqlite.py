@@ -2,6 +2,7 @@ import sqlite3
 
 DB_NAME = "persistencia.db"
 
+
 def criar_tabelas():
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
@@ -41,8 +42,9 @@ def criar_tabelas():
     conn.close()
     print("Banco SQLite e tabelas de restaurantes criadas com sucesso!")
 
-# Inserir restaurante
+
 def inserir_restaurante(nome, estado_id, cidade_id, cardapio_principal):
+    """Insere um restaurante na tabela restaurantes."""
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
     cursor.execute("""
@@ -53,11 +55,17 @@ def inserir_restaurante(nome, estado_id, cidade_id, cardapio_principal):
     conn.close()
     print(f"Restaurante {nome} inserido com sucesso!")
 
-# Listar restaurantes
+
 def listar_restaurantes():
+    """Lista restaurantes com nomes de estado e cidade."""
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM restaurantes")
-    restaurantes = cursor.fetchall()
+    cursor.execute("""
+        SELECT r.id, r.nome, e.nome AS estado, c.nome AS cidade, r.cardapio_principal
+        FROM restaurantes r
+        JOIN estados e ON r.estado_id = e.id
+        JOIN cidades c ON r.cidade_id = c.id
+    """)
+    dados = cursor.fetchall()
     conn.close()
-    return restaurantes
+    return dados
