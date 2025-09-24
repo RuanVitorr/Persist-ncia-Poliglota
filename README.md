@@ -102,32 +102,48 @@ O sistema foi dividido em três módulos principais:
 - Mapa – mostra os restaurantes próximos ao usuário.
 
 
-🚀 Como rodar o projeto
+## 🚀 Como rodar o projeto
 
-1. Clonar o repositório
-#git clone https://github.com/RuanVitorr/Persistencia-Poliglota.git
-#cd Persistencia-Poliglota
+1. **Clone o repositório:**
+   ``` bash
+   git clone https://github.com/RuanVitorr/Persistencia-Poliglota.git
+   cd Persistencia-Poliglota
+   ```
+
+
 
 2. Criar e ativar ambiente virtual (opcional mas recomendado)
+``` bash
 python -m venv .venv
 # macOS/Linux:
 source .venv/bin/activate
 # Windows (PowerShell):
 .venv\Scripts\Activate.ps1
+```
 
 3. Instalar dependências
+``` bash
 pip install -r requirements.txt
+```
 
 4. Configurar variáveis de ambiente (MongoDB)
 Crie um arquivo .env na raiz com:
+``` bash
 MONGODB_URI=mongodb://localhost:27017/
 MONGO_DB=persistencia_poliglota
+```
 
 5. Executar a API (FastAPI)
+``` bash
 uvicorn api_fastapi:app --host 127.0.0.1 --port 8010 --reload
+```
 
 6. Executar a interface (Streamlit)
+``` bash
+
 streamlit run app_streamlit.py
+
+```
 A interface abrirá no navegador (geralmente em http://localhost:8501).
 
 
