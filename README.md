@@ -2,7 +2,7 @@
 
 Autores: Ana Beatriz Cavalcanti, Anitta Donato, Rebecca Nery, Ruan Ferreira
 
-📖 Introdução
+## 📖 Introdução
 
 Este projeto tem como objetivo desenvolver uma aplicação prática para gerenciamento de restaurantes, aplicando o conceito de persistência poliglota.
 
@@ -18,7 +18,7 @@ A ideia é integrar diferentes tecnologias de armazenamento de dados em uma úni
 
   
 
-🏗️ Arquitetura do Sistema
+## 🏗️ Arquitetura do Sistema
 
 O sistema foi dividido em três módulos principais:
 
@@ -74,14 +74,19 @@ O sistema foi dividido em três módulos principais:
 
 
 
-⚙️ Funcionalidades Principais
+## ⚙️ Funcionalidades Principais
 
-✅ Cadastro de Restaurantes – insere dados em SQLite e MongoDB simultaneamente.
-✅ Listagem de Restaurantes – mostra informações detalhadas (cardápio, avaliações, fotos, horários).
-✅ Busca por Proximidade – retorna apenas restaurantes dentro de um raio definido.
-✅ Visualização em Mapa – localização em mapas.
+✅ - Cadastro de Restaurantes – insere dados em SQLite e MongoDB simultaneamente.
 
-🔍 Exemplos de Consultas
+✅ - Listagem de Restaurantes – mostra informações detalhadas (cardápio, avaliações, fotos, horários).
+
+✅ - Busca por Proximidade – retorna apenas restaurantes dentro de um raio definido.
+
+✅ - Visualização em Mapa – localização em mapas.
+
+
+
+## 🔍 Exemplos de Consultas
 
 - Listar todos os restaurantes cadastrados (em SQLite e MongoDB).
 
@@ -91,7 +96,9 @@ O sistema foi dividido em três módulos principais:
 
 - Visualizar todos em um mapa interativo.
 
-🖥️ Interface do Usuário
+
+
+## 🖥️ Interface do Usuário
 
 - Menu principal – navegação entre funcionalidades.
 
@@ -102,6 +109,7 @@ O sistema foi dividido em três módulos principais:
 - Mapa – mostra os restaurantes próximos ao usuário.
 
 
+
 ## 🚀 Como rodar o projeto
 
 1. **Clone o repositório:**
@@ -109,8 +117,6 @@ O sistema foi dividido em três módulos principais:
    git clone https://github.com/RuanVitorr/Persistencia-Poliglota.git
    cd Persistencia-Poliglota
    ```
-
-
 
 2. Criar e ativar ambiente virtual (opcional mas recomendado)
 ``` bash
@@ -150,6 +156,7 @@ A interface abrirá no navegador (geralmente em http://localhost:8501).
 
 ## 🛠️ Estrutura do projeto
 
+```text
 📂 Projeto
 ├── 📄 api_fastapi.py # 🚀 API FastAPI (endpoints REST)
 ├── 📄 app_streamlit.py # 🎨 Interface Streamlit
@@ -158,14 +165,15 @@ A interface abrirá no navegador (geralmente em http://localhost:8501).
 ├── 🌍 geoprocessamento.py # 📌 Funções geoespaciais
 ├── 📦 requirements.txt # 📋 Dependências do projeto
 └── 💾 persistencia.db # 🗄️ Banco SQLite (exemplo)
+```
 
 
-✅ Conclusão
+## ✅ Conclusão
 
 O projeto demonstrou a aplicação prática do conceito de persistência poliglota, integrando SQLite e MongoDB em uma única solução. Além disso, a inclusão do geoprocessamento proporcionou funcionalidades avançadas de localização. A arquitetura modular adotada facilita a expansão futura, permitindo a inclusão de novos tipos de consultas, módulos adicionais ou até novos bancos de dados. A interface interativa desenvolvida com Streamlit garante que os usuários possam acessar as funcionalidades de forma simples e eficiente, tornando o projeto completo e aplicável em cenários reais de gerenciamento de restaurantes.
 
 
-📸 Prints do funcionamento
+## 📸 Prints do funcionamento
 
 - Menu principal
 - Página de cadastro de restaurante
