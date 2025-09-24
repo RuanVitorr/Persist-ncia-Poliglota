@@ -148,17 +148,16 @@ A interface abrirá no navegador (geralmente em http://localhost:8501).
 
 
 
-🛠️ Estrutura do projeto
+## 🛠️ Estrutura do projeto
 
-.
-├── api_fastapi.py         # API FastAPI (endpoints REST)
-├── app_streamlit.py       # Interface Streamlit
-├── db_sqlite.py           # Conexão/queries SQLite
-├── db_mongo.py            # Conexão/queries MongoDB
-├── geoprocessamento.py    # Funções geoespaciais
-├── requirements.txt       # Dependências do projeto
-└── persistencia.db        # Banco SQLite (exemplo)
-
+📂 Projeto
+├── 📄 api_fastapi.py # 🚀 API FastAPI (endpoints REST)
+├── 📄 app_streamlit.py # 🎨 Interface Streamlit
+├── 🗃️ db_sqlite.py # 🛢️ Conexão/queries SQLite
+├── 🗃️ db_mongo.py # 🍃 Conexão/queries MongoDB
+├── 🌍 geoprocessamento.py # 📌 Funções geoespaciais
+├── 📦 requirements.txt # 📋 Dependências do projeto
+└── 💾 persistencia.db # 🗄️ Banco SQLite (exemplo)
 
 
 ✅ Conclusão
