@@ -76,13 +76,15 @@ O sistema foi dividido em três módulos principais:
 
 ## ⚙️ Funcionalidades Principais
 
-✅ - Cadastro de Restaurantes – insere dados em SQLite e MongoDB simultaneamente.
+```text
+✅ Cadastro de Restaurantes – insere dados em SQLite e MongoDB simultaneamente.
 
-✅ - Listagem de Restaurantes – mostra informações detalhadas (cardápio, avaliações, fotos, horários).
+✅ Listagem de Restaurantes – mostra informações detalhadas (cardápio, avaliações, fotos, horários).
 
-✅ - Busca por Proximidade – retorna apenas restaurantes dentro de um raio definido.
+✅ Busca por Proximidade – retorna apenas restaurantes dentro de um raio definido.
 
-✅ - Visualização em Mapa – localização em mapas.
+✅ Visualização em Mapa – localização em mapas.
+```
 
 
 
@@ -183,16 +185,22 @@ O projeto demonstrou a aplicação prática do conceito de persistência poliglo
 ## 📸 Prints do funcionamento
 
 ### Menu Principal
-![Menu Principal](images/menu.png)
+
+<img width="380" height="852" alt="menu_principal" src="https://github.com/user-attachments/assets/d82ed6e3-619c-4401-bdfb-4619a97a55ee" />
+
 
 ### Cadastro de Restaurante
-![Cadastro de Restaurante](images/cadastro.png)
+
+<img width="568" height="256" alt="cadastro_page" src="https://github.com/user-attachments/assets/4c0a8f2e-36a3-4c8b-88bf-c7da62282fec" />
+
 
 ### Listagem de Restaurantes
-![Lista](images/lista.png)
+
+<img width="568" height="256" alt="listagem_restau" src="https://github.com/user-attachments/assets/4eff3121-1d4c-4f8f-8870-6c67f7e6b380" />
+
+<img width="568" height="258" alt="listagem_restau2" src="https://github.com/user-attachments/assets/745f8504-e689-4040-929d-a4f21d4dba6d" />
+
 
 ### Mapa Interativo
-![Mapa](images/mapa.png)
 
-
-  
+<img width="568" height="256" alt="localizacao" src="https://github.com/user-attachments/assets/d4bb9b17-45cb-4d81-bd0d-cbb201fd7588" />  
